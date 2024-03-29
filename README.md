@@ -24,6 +24,6 @@ Created for use with zabbix http-agent since zabbix-agent2 requires elevated pri
 curl http://yours-domain.com:10070/docker_ping<br><br>
 
 
-⚙️**OS Requirements:**⚙️<br>
+⚙️**OS Requirements**⚙️<br>
 1) systemd (if not, the binary file is posted)<br>
 2) glibc>=2.17 (ubuntu 13.04, redhat 7)<br><br>
