@@ -6,7 +6,7 @@ The program also limits the pool of queries and methods that can be used. Only G
 
 ⚠️The program listens to port 10070 after installation.⚠️<br>
 
-Created for use with zabbix http-agent since zabbix-agent2 requires elevated privileges to monitor docker metrics.<br>
+Created for use with zabbix http-agent since zabbix-agent2 requires elevated privileges to monitor docker metrics.<br><br>
 
 ✅**List of allowed requests**✅<br>
 
@@ -17,8 +17,13 @@ Created for use with zabbix http-agent since zabbix-agent2 requires elevated pri
 "/docker_info": "info",<br>
 "/docker_ping": "_ping",<br>
 "/docker_container_info/{container_id}": "containers/{container_id}/json"<br>
-"/docker_container_stats/{container_id}": "/containers/{container_id}/stats?stream=false"<br>
+"/docker_container_stats/{container_id}": "/containers/{container_id}/stats?stream=false"<br><br>
 
 
 🔗**Example of use after installation**🔗<br>
-curl http://yours-domain.com:10070/docker_ping<br>
+curl http://yours-domain.com:10070/docker_ping<br><br>
+
+
+⚙️**OS Requirements:**⚙️<br>
+1) systemd (if not, the binary file is posted)<br>
+2) glibc>=2.17 (ubuntu 13.04, redhat 7)<br><br>
