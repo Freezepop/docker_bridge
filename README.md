@@ -16,7 +16,7 @@ Created for use with zabbix http-agent since zabbix-agent2 requires elevated pri
 "/docker_images": "images/json",<br>
 "/docker_info": "info",<br>
 "/docker_ping": "_ping",<br>
-"/docker_container_info/{container_id}": "/containers/{container_id}/json"<br>
+"/docker_container_info/{container_id}": "/containers/{container_id}/json",<br>
 "/docker_container_stats/{container_id}": "/containers/{container_id}/stats?stream=false"<br><br>
 
 
