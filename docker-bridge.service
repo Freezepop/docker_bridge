@@ -1,10 +1,14 @@
 [Unit]
 Description=Docker metrics bridge
 After=network.target
+
 [Service]
 User=root
 Group=root
+
+#Example of passing arguments: ExecStart=/usr/sbin/docker_bridge -server="127.0.0.1, example.com, etc"
 ExecStart=/usr/sbin/docker_bridge
+
 Type=simple
 Restart=on-failure
 KillMode=control-group
